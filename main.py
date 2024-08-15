@@ -9,7 +9,7 @@ if __name__ == "__main__":
     with open(f"{sys.argv[1]}", "r") as f:
         config = json.load(f)
         ball = config["pokeball"]
-        pokemon = factory.create(config["pokemon"], 100, StatusEffect.NONE, 1)
+        pokemon = factory.create(config["pokemon"], 100, StatusEffect.NONE, 0.0)
 
         # for i in range(100, 1, -1):
         #     pokemon = factory.create(config["pokemon"], 100, StatusEffect.NONE, i / 100)
